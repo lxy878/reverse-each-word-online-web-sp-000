@@ -2,9 +2,11 @@ require 'pry'
 
 def reverse_each_word(sentence)
   words = sentence.split
-
-  binding.pry
+  words.each do |word|
+    puts
+  end
+  # binding.pry
 end
 
 s = "Hello there, and how are you?"
-reverse_each_word(s)
+puts reverse_each_word(s)
