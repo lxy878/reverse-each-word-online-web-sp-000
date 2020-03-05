@@ -7,11 +7,8 @@ def reverse_each_word(sentence)
     reverse << word.reverse
   end
   puts reverse.join(" ")
-  
+
   reverse = words.collect {|word| word.reverse}
   reverse.join(" ")
   # binding.pry
 end
-
-s = "Hello there, and how are you?"
-puts reverse_each_word(s)
