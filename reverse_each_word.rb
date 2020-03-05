@@ -6,7 +6,7 @@ def reverse_each_word(sentence)
   words.each do |word|
     word.reverse
   end
-  reverse = words.map {|word| word.reverse}
+  reverse = words.colect {|word| word.reverse}
   reverse.join(" ")
   # binding.pry
 end
